@@ -46,12 +46,6 @@ val_gen = train_datagen.flow_from_directory(directory= file2, subset='validation
 
 test_gen = test_datagen.flow_from_directory(directory=file, shuffle=True, target_size=(100,100), class_mode='categorical', batch_size=500)
 
-from tensorflow.keras.applications import VGG16
-
-from tensorflow.keras import Input
-
-from keras.layers import BatchNormalization
-
 from tensorflow.keras import Model
 
 import keras
